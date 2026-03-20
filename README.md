@@ -196,10 +196,3 @@ Refer to `docs/deployment.md` for full infrastructure setup, domain configuratio
 | Database Schema | `docs/database.md` |
 | Deployment Guide | `docs/deployment.md` |
 | Admin Guide | `docs/admin-guide.md` |
-
----
-
-## Offices
-
-**Canada Office** — Niagara Falls, ON
-**U.S. Office** — Niagara Falls, NY
