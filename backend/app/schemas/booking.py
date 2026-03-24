@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 from decimal import Decimal
 
 from pydantic import BaseModel, field_validator
@@ -49,3 +49,19 @@ class AvailabilityResponse(BaseModel):
     max_seats: int
     seats_booked: int
     seats_available: int
+
+
+class ReservationRead(BaseModel):
+    id: int
+    reference: str
+    tour_id: int
+    tour_date: date
+    adults: int
+    children: int
+    seniors: int
+    status: ReservationStatus
+    special_requests: str | None
+    cancelled_at: datetime | None
+    cancel_reason: str | None
+
+    model_config = {"from_attributes": True}
